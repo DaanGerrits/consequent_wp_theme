@@ -16,7 +16,9 @@
 
     <link rel="profile" href="//gmpg.org/xfn/11">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css?family=Six+Caps" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/libs/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/header.css">
 
     <?php wp_head(); ?>
@@ -30,13 +32,11 @@
         <div class="container header--wrapper">
           <nav class="navbar">
             <div class="navbar-header">
-              <a class="navbar-brand" href="/">
-                <?php
-                  if ( function_exists( 'the_custom_logo' ) ) {
-                      the_custom_logo();
-                  }
-                ?>
-              </a>
+              <?php
+                if ( function_exists( 'the_custom_logo' ) ) {
+                    the_custom_logo();
+                }
+              ?>
 
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
@@ -75,6 +75,11 @@
                 <li><a href="/vacatures">Vacatures</a></li>
               </ul>
             </div>
+
+            <?php clean_custom_menus(); ?>
           </nav>
+
+
+
         </div> <!-- /.container -->
       </header>

@@ -48,7 +48,13 @@ add_theme_support( 'custom-logo', $defaults );
 function consequent_load_scripts() {
   // libs can be included here
   wp_enqueue_style('style', get_stylesheet_uri());
-  wp_enqueue_style('header', get_template_directory_uri() . '/css/header.css', false, '1.1', 'all');
-  wp_enqueue_script();
+  wp_enqueue_style('owl-carousel', get_template_directory_uri() . '/css/libs/owl.carousel.min.css', false, '1.0.0', 'all');
+  wp_enqueue_style('owl-theme', get_template_directory_uri() . '/css/libs/owl.theme.default.min.css', false, '1.0.0', 'all');
+  wp_enqueue_style('header', get_template_directory_uri() . '/css/header.css', false, '1.0.0', 'all');
+
+  wp_dequeue_script( 'jquery' );
+  wp_enqueue_script('custom', get_template_directory_uri() . '/js/libs/jquery.v3.3.1.min.js', array(), '3.3.1', true);
+  wp_enqueue_script('custom', get_template_directory_uri() . '/js/libs/owl.carousel.min.js', array(), '1.0.0', true);
+  wp_enqueue_script('custom', get_template_directory_uri() . '/js/custom.js', array(), '1.0.0', true);
 }
 add_action('wp_enqueue_scripts', 'consequent_load_scripts');
