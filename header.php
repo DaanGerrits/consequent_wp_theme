@@ -46,7 +46,7 @@
               </button>
             </div>
 
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
                 <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
 
@@ -74,10 +74,23 @@
                 <li><a href="/contact">Contact</a></li>
                 <li><a href="/vacatures">Vacatures</a></li>
               </ul>
-            </div>
+            </div> -->
 
-            <?php clean_custom_menus(); ?>
+            <?php
+              wp_nav_menu( array(
+                  'theme_location'  => 'primary',
+                  'depth'	          => 2, // 1 = no dropdowns, 2 = with dropdowns.
+                  'container'       => 'div',
+                  'container_class' => 'collapse navbar-collapse',
+                  'container_id'    => 'bs-example-navbar-collapse-1',
+                  'menu_class'      => 'nav navbar-nav navbar-right',
+                  'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+                  'walker'          => new WP_Bootstrap_Navwalker(),
+                 )
+               );
+             ?>
           </nav>
+
 
 
 

@@ -12,21 +12,21 @@
 <!-- SERVICES -->
 <section id="services" class="container">
   <div class="col-md-4 services--box">
-    <h2><a href="/trainingen/prive-trainingen">Privé Training</a></h2>
+    <h2><a href="trainingen/prive-trainingen">Privé Training</a></h2>
     <p>Houdt u niet zo van het 'groepsgebeuren' en heeft u liever een op maat gemaakt cursus? Kies dan voor privé training.</p>
-    <a href="/trainingen/prive-trainingen" class="btn btn-default">Lees meer</a>
+    <a href="trainingen/prive-trainingen" class="btn btn-default">Lees meer</a>
   </div>
 
   <div class="col-md-4 services--box">
-    <h2><a href="/traingingen/angst-voor-honden">Angst voor honden</a></h2>
+    <h2><a href="traingingen/angst-voor-honden">Angst voor honden</a></h2>
     <p>Laat uw leven niet langer belemmeren door uw angst voor honden. Doe er iets aan! Schrijf u snel in voor deze training.</p>
-    <a href="/trainingen/angst-voor-honden" class="btn btn-default">Lees meer</a>
+    <a href="trainingen/angst-voor-honden" class="btn btn-default">Lees meer</a>
   </div>
 
   <div class="col-md-4 services--box">
-    <h2><a href="/trainingen/gedragstherapie">Gedragstherapie</a></h2>
+    <h2><a href="trainingen/gedragstherapie">Gedragstherapie</a></h2>
     <p>Vertoond uw hond probleem gedrag? Wilt u hier iets aan doen? Neem dan snel contact met ons op!</p>
-    <a href="/trainingen/gedragstherapie" class="btn btn-default">Lees meer</a>
+    <a href="trainingen/gedragstherapie" class="btn btn-default">Lees meer</a>
   </div>
 </section>
 
@@ -47,7 +47,7 @@
   </article>
 
   <aside class="col-md-4">
-    <h2>Agenda</h2>
+    <?php get_sidebar('homepage'); ?>
   </aside>
 
   <section id="testimonials" class="col-md-12">

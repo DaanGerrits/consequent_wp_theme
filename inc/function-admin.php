@@ -40,6 +40,34 @@ add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
 add_theme_support( 'custom-logo', $defaults );
 
 /*
+  ================
+    ADD SIDEBAR
+  ================
+*/
+
+if ( function_exists('register_sidebar') ) {
+  register_sidebar(array(
+    'before_widget' => '<li id="%1$s" class="widget %2$s">',
+    'after_widget' => '</li>',
+    'before_title' => '<h2 class="widgettitle">',
+    'after_title' => '</h2>',
+  ));
+}
+
+// Homepage SIDEBAR
+if ( function_exists('register_sidebar') ) {
+  register_sidebar(array(
+    'name' => 'Homepage Sidebar',
+    'id' => 'homepage-sidebar',
+    'description' => 'Sidebar for custom homepage',
+    'before_widget' => '<div><li id="%1$s" class="widget %2$s">',
+    'after_widget' => '</li></div>',
+    'before_title' => '<h2 class="widgettitle">',
+    'after_title' => '</h2>',
+  ));
+}
+
+/*
   ===============================
     FRONT-END ENQUEUE FUNCTIONS
   ===============================
