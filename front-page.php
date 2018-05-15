@@ -43,20 +43,16 @@
     <p>Met vriendelijke groeten,</p>
     <p>Jolyn Holtvluwer, eigenaresse van Hondenschool Consequent</p>
 
-    <img src="img/jolyn-holtvluwer-hondenschool-consequent.jpg" alt="Jolyn Holtvluwer van Hondenschool Consequent">
+    <img src="/consequent/wp-content/themes/consequent_theme/img/jolyn-holtvluwer-hondenschool-consequent.jpg" alt="Jolyn Holtvluwer van Hondenschool Consequent">
   </article>
 
   <aside class="col-md-4">
     <?php get_sidebar('homepage'); ?>
   </aside>
 
-  <section id="testimonials" class="col-md-12">
-    <!-- Set up your HTML -->
-    <div class="owl-carousel">
-      <div>Testimonials 1</div>
-      <div>Testimonials 2</div>
-      <div>Testimonials 3</div>
-    </div>
+  <section id="testimonials" class="col-md-8">
+    <!-- Include custom theme widget -->
+    <?php include "theme-widgets/testimonials-widget.php"; ?>
   </section>
 </main>
 
