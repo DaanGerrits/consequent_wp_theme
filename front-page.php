@@ -50,13 +50,8 @@
     <?php get_sidebar('homepage'); ?>
   </aside>
 
-  <section id="testimonials" class="col-md-12">
-    <!-- Set up your HTML -->
-    <div class="owl-carousel">
-      <div>Testimonials 1</div>
-      <div>Testimonials 2</div>
-      <div>Testimonials 3</div>
-    </div>
+  <section id="testimonials" class="col-md-8">
+    <?php include "theme-widgets/testimonials-widget.php"; ?>
   </section>
 </main>
 

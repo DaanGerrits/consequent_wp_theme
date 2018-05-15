@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/libs/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/header.css"> -->
 
+    <?php // include_once( ABSPATH . 'wp-admin/includes/plugin.php' ); ?>
     <?php wp_head(); ?>
   </head>
 
@@ -46,36 +47,6 @@
               </button>
             </div>
 
-            <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
-
-                <li class="dropdown">
-                  <a href="/over-ons" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Over Ons <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="/over-ons/visie-en-werkwijze">Visie en Werkwijze</a></li>
-                    <li><a href="/over-ons/onze-mensen">Onze Mensen</a></li>
-                    <li><a href="/over-ons/locatie">Locatie</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="/over-ons/algemene-voorwaarden">Algemene Voorwaarden</a></li>
-                  </ul>
-                </li>
-
-                <li class="dropdown">
-                  <a href="/trainingen" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Trainingen <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="/trainingen/groepscursussen">Groepscursussen</a></li>
-                    <li><a href="/trainingen/prive-trainingen">Privé Trainingen / Gedragstherapie</a></li>
-                    <li><a href="/trainingen/coachen">Coachen met Honden</a></li>
-                  </ul>
-                </li>
-
-                <li><a href="/inschrijven">Inschrijven</a></li>
-                <li><a href="/contact">Contact</a></li>
-                <li><a href="/vacatures">Vacatures</a></li>
-              </ul>
-            </div> -->
-
             <?php
               wp_nav_menu( array(
                   'theme_location'  => 'primary',
@@ -90,9 +61,6 @@
                );
              ?>
           </nav>
-
-
-
 
         </div> <!-- /.container -->
       </header>
