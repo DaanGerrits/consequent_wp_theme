@@ -3,6 +3,16 @@ img {
   height: auto;
 }
 
+.not-front article img {
+  width: inherit;
+  height: inherit;
+}
+
+.not-front main {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #D8D6D1;
+}
+
 #social {
   margin-top: 30px;
 }
