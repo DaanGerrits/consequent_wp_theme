@@ -80,6 +80,7 @@ function consequent_load_scripts() {
   wp_enqueue_style('owl-theme', get_template_directory_uri() . '/css/libs/owl.theme.default.min.css');
   wp_enqueue_style('header', get_template_directory_uri() . '/css/header.css', false, '1.0.0', 'all');
   wp_enqueue_style('testimonials_slider', get_template_directory_uri() . '/css/testimonials.slider.css', false, '1.0.0', 'all');
+  wp_enqueue_style('events_widget', get_template_directory_uri() . '/css/events.widget.css', false, '1.0.0', 'all');
   wp_enqueue_style('global', get_template_directory_uri() . '/css/global.css', false, '1.0.0', 'all');
 
   //wp_dequeue_script( 'jquery' );

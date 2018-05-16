@@ -49,14 +49,18 @@
       </article>
 
       <section id="testimonials">
-        <!-- Include custom component -->
+        <!-- include custom testimonials component -->
         <?php include "components/testimonials-widget.php"; ?>
       </section>
     </main>
 
     <aside class="sidebar col-md-4 col-md-offset-1">
-      <?php get_sidebar('homepage'); ?>
+      <?php // get_sidebar('homepage'); ?>
 
+      <!-- include custom events list component -->
+      <?php include "components/events-widget.php"; ?>
+
+      <!-- include custom facebook component -->
       <?php include "components/facebook-widget.php"; ?>
     </aside>
   </div>
