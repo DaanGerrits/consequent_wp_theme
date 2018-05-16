@@ -160,13 +160,12 @@ a:hover, a:focus {
 }
 
 /* MAIN */
-main.container {
+#main-content {
   background-color: #fff;
   padding: 60px 30px;
 }
 
-main #about p {
-  max-width: 60ch;
+#main-content #about p {
   margin-bottom: 20px;
 }
 

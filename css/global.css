@@ -3,6 +3,18 @@ img {
   height: auto;
 }
 
-#about img {
-  max-width: 60ch;
+#social {
+  margin-top: 30px;
+}
+
+#social .social-icon {
+  background-color: #3B5998;
+  width: 50px;
+  height: 50px;
+  display: block;
+  border-radius: 4px;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  font-size: 1.8em;
 }

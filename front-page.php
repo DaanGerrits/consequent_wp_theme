@@ -31,30 +31,36 @@
 </section>
 
 <!-- MAIN -->
-<main class="container">
-  <article id="about" class="col-md-8">
-    <h2>Welkom bij Hondenschool Consequent</h2>
-    <p>Een goede relatie tussen hond en baas begint met wederzijds respect en begrip. Een hondentraining is dan ook veel meer dan uw hond leren zitten of liggen.</p>
-    <p>Ons doel is dat u en uw hond elkaar beter leren begrijpen. Dat doen we door u te leren hoe u uw hond op een goede manier begeleidt en opvoedt.</p>
-    <p>Iedere hond is welkom bij Hondenschool Consequent. Puppy of volwassen, rashond of rasechte bastaard, onbezorgde hond of hond met een verleden...
-      Voor ieder type hond bieden wij een passende cursus of begeleiding.</p>
-    <p>Naast de cursussen die in groepsverband worden aangeboden, bieden wij ook privétraining, begeleiding aan huis en gedragstherapie.</p>
-    <p>Snuffel gerust even rond op de site!</p>
-    <p>Met vriendelijke groeten,</p>
-    <p>Jolyn Holtvluwer, eigenaresse van Hondenschool Consequent</p>
+<div id="main-content" class="container">
+  <div class="row">
+    <main class="col-md-7">
+      <article id="about">
+        <h2>Welkom bij Hondenschool Consequent</h2>
+        <p>Een goede relatie tussen hond en baas begint met wederzijds respect en begrip. Een hondentraining is dan ook veel meer dan uw hond leren zitten of liggen.</p>
+        <p>Ons doel is dat u en uw hond elkaar beter leren begrijpen. Dat doen we door u te leren hoe u uw hond op een goede manier begeleidt en opvoedt.</p>
+        <p>Iedere hond is welkom bij Hondenschool Consequent. Puppy of volwassen, rashond of rasechte bastaard, onbezorgde hond of hond met een verleden...
+          Voor ieder type hond bieden wij een passende cursus of begeleiding.</p>
+        <p>Naast de cursussen die in groepsverband worden aangeboden, bieden wij ook privétraining, begeleiding aan huis en gedragstherapie.</p>
+        <p>Snuffel gerust even rond op de site!</p>
+        <p>Met vriendelijke groeten,</p>
+        <p>Jolyn Holtvluwer, eigenaresse van Hondenschool Consequent</p>
 
-    <img src="/consequent/wp-content/themes/consequent_theme/img/jolyn-holtvluwer-hondenschool-consequent.jpg" alt="Jolyn Holtvluwer van Hondenschool Consequent">
-  </article>
+        <img src="/consequent/wp-content/themes/consequent_theme/img/jolyn-holtvluwer-hondenschool-consequent.jpg" alt="Jolyn Holtvluwer van Hondenschool Consequent">
+      </article>
 
-  <aside class="col-md-4">
-    <?php get_sidebar('homepage'); ?>
-  </aside>
+      <section id="testimonials">
+        <!-- Include custom component -->
+        <?php include "components/testimonials-widget.php"; ?>
+      </section>
+    </main>
 
-  <section id="testimonials" class="col-md-8">
-    <!-- Include custom theme widget -->
-    <?php include "theme-widgets/testimonials-widget.php"; ?>
-  </section>
-</main>
+    <aside class="sidebar col-md-4 col-md-offset-1">
+      <?php get_sidebar('homepage'); ?>
+
+      <?php include "components/facebook-widget.php"; ?>
+    </aside>
+  </div>
+</div>
 
 
 <?php get_footer(); ?>
