@@ -1,0 +1,25 @@
+.events__widget {
+  margin-bottom: 60px;
+}
+
+.events--list {
+  list-style: none;
+  padding: 0;
+}
+
+.events--item {
+  border-bottom: 1px solid #D8D6D1;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.event--title {
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.event--body > p {
+  margin-bottom: 15px;
+}
