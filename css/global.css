@@ -28,3 +28,39 @@ img {
   text-align: center;
   font-size: 1.8em;
 }
+
+/* Forms */
+
+label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+input:not([type='submit']), textarea {
+  padding: 0.5em;
+  font-weight: normal;
+  border: 1px solid #D8D6D1;
+  width: 100%;
+}
+
+input {
+  height: 40px;
+}
+
+/* Contact page */
+
+.contact-form {
+  padding-right: 60px;
+  margin-bottom: 0;
+}
+
+.field-image {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-form {
+    padding-right: 0;
+    margin-bottom: 60px;
+  }
+}
