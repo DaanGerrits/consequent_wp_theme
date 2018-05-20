@@ -36,14 +36,14 @@ label {
   margin-bottom: 15px;
 }
 
-input:not([type='submit']), textarea {
+input:not([type="submit"]), textarea {
   padding: 0.5em;
   font-weight: normal;
   border: 1px solid #D8D6D1;
   width: 100%;
 }
 
-input {
+input:not([type="submit"]) {
   height: 40px;
 }
 

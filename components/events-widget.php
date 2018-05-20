@@ -22,15 +22,15 @@
             <?php if ($date || $location || $time) : ?>
               <div class="event--info">
               <?php if ($date) : ?>
-                <div class="event--date"><?php print "<strong>Datum: </strong>" . $date; ?></div>
-              <?php endif; ?>
-
-              <?php if ($location) : ?>
-                <div class="event--location"><?php print "<strong>Locatie: </strong>" . $location; ?></div>
+                <div class="event--date"><?php print "<span>Datum:</span> " . $date; ?></div>
               <?php endif; ?>
 
               <?php if ($time) : ?>
-                <div class="event--time"><?php print "<strong>Tijdstip: </strong>" . $time; ?></div>
+                <div class="event--time"><?php print "<span>Tijdstip:</span> " . $time; ?></div>
+              <?php endif; ?>
+
+              <?php if ($location) : ?>
+                <div class="event--location"><?php print "<span>Locatie:</span> " . $location; ?></div>
               <?php endif; ?>
               </div>
             <?php endif; ?>
