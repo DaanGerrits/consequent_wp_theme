@@ -5,12 +5,38 @@
 
   <ul class="events--list">
     <?php if ( $query->have_posts() ) : ?>
+
     <!-- $i sets max number of items to render -->
       <?php $i = 0; while ($i < 8 && $query->have_posts() ) : $query->the_post(); ?>
+
+        <?php
+          $date = get_field("datum");
+          $location = get_field("locatie");
+          $time = get_field("tijdstip");
+        ?>
+
         <!-- Render single event -->
           <li class="events--item">
             <span class="event--title"><?php the_title(); ?></span>
-            <span class="event--body"><?php the_content(); ?></span>
+
+            <?php if ($date || $location || $time) : ?>
+              <div class="event--info">
+              <?php if ($date) : ?>
+                <div class="event--date"><?php print "<strong>Datum: </strong>" . $date; ?></div>
+              <?php endif; ?>
+
+              <?php if ($location) : ?>
+                <div class="event--location"><?php print "<strong>Locatie: </strong>" . $location; ?></div>
+              <?php endif; ?>
+
+              <?php if ($time) : ?>
+                <div class="event--time"><?php print "<strong>Tijdstip: </strong>" . $time; ?></div>
+              <?php endif; ?>
+              </div>
+            <?php endif; ?>
+
+            <p class="event--body"><?php the_content(); ?></p>
+
           </li>
       <?php $i++; endwhile; wp_reset_postdata(); ?>
     <!-- show pagination here -->
