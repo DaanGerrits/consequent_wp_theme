@@ -32,7 +32,7 @@
      'capability_type' => 'post',
      'hierarchical' => false,
      'supports' => array(
-      // 'title',
+      'title',
       'editor',
       // 'excerpt',
        'thumbnail',

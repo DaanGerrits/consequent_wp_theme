@@ -8,19 +8,25 @@
       <div class="col-xs-12">
         <h2><?php the_title(); ?></h2>
 
-        <?php $query = new WP_Query( array( 'post_type' => 'team' ) ); ?>
-        <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
-        <?php
-          $name = get_field("naam");
-          $image = get_field("foto");
-        ?>
-
-        <div class="col-sm-3 team--member">
-          <a href="#" title="<?php echo "Meer over " .$name; ?>"><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /></a>
-          <span><?php echo $name; ?></span>
-        </div>
-
+        <?php if (have_posts()) : while(have_posts()) : the_post(); ?>
+          <?php the_content(); ?>
         <?php endwhile; endif; ?>
+
+        <section id="team" class="row team__block">
+          <?php $query = new WP_Query( array( 'post_type' => 'team', 'order' => 'ASC' ) ); ?>
+          <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+          <?php $image = get_field("foto"); ?>
+
+          <div class="col-md-3 col-sm-4 col-xs-6 team--member">
+            <a href="<?php echo get_permalink( $post->ID ); ?>" title="<?php echo "Meer over " .$name; ?>">
+              <div class="team--image" style="background-image: url(<?php echo $image['url']; ?>);"></div>
+              <!-- <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /> -->
+            </a>
+            <span><?php the_title(); ?></span>
+          </div>
+
+          <?php endwhile; endif; ?>
+        </section>
       </div>
 
     </div>

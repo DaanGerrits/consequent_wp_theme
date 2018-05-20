@@ -64,3 +64,31 @@ input:not([type="submit"]) {
     margin-bottom: 60px;
   }
 }
+
+
+/* Team page */
+
+.team__block {
+  margin: 30px -15px;
+}
+
+.team--member {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.team--image {
+  display: block;
+  background-size: cover;
+  background-position: center;
+  height: width: 100%;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .team--member {
+    width: 100%;
+  }
+}
