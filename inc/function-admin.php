@@ -82,6 +82,7 @@ function consequent_load_scripts() {
   wp_enqueue_style('testimonials_slider', get_template_directory_uri() . '/css/testimonials.slider.css', false, '1.0.0', 'all');
   wp_enqueue_style('events_widget', get_template_directory_uri() . '/css/events.widget.css', false, '1.0.0', 'all');
   wp_enqueue_style('global', get_template_directory_uri() . '/css/global.css', false, '1.0.0', 'all');
+  wp_enqueue_style('pages_css', get_template_directory_uri() . '/css/pages.css', false, '1.0.0', 'all');
 
   //wp_dequeue_script( 'jquery' );
   //wp_register_script('jquery.bootstrap.min', get_template_directory_uri() . '/js/bootstrap.min.js', 'jquery');
