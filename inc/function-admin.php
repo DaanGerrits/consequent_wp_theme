@@ -67,6 +67,16 @@ if ( function_exists('register_sidebar') ) {
   ));
 }
 
+// add categories to pages
+function myplugin_settings() {
+    // Add tag metabox to page
+    register_taxonomy_for_object_type('post_tag', 'page');
+    // Add category metabox to page
+    register_taxonomy_for_object_type('category', 'page');
+}
+add_action( 'init', 'myplugin_settings' );
+
+
 /*
   ===============================
     FRONT-END ENQUEUE FUNCTIONS
