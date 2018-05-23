@@ -18,9 +18,8 @@
           <?php $image = get_field("foto"); ?>
 
           <div class="col-md-3 col-sm-4 col-xs-6 team--member">
-            <a href="<?php echo get_permalink( $post->ID ); ?>" title="<?php echo "Meer over " .$name; ?>">
+            <a href="<?php echo get_permalink( $post->ID ); ?>" title="<?php echo "Meer over " .$image['alt']; ?>">
               <div class="team--image" style="background-image: url(<?php echo $image['url']; ?>);"></div>
-              <!-- <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /> -->
             </a>
             <span><?php the_title(); ?></span>
           </div>

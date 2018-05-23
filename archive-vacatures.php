@@ -1,22 +1,15 @@
 <?php get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="container site-main" role="main">
+	<section id="main-content" class="not-front container vacatures-view">
+		<main id="content" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
-
 			<?php
 			// Start the Loop.
-			while ( have_posts() ) : the_post();
-				the_title();
-				the_content();
+			while ( have_posts() ) : the_post(); ?>
+				<h2><?php the_title(); ?></h2>
+				<?php the_content();
 				/*
 				 * Include the Post-Format-specific template for the content.
 				 * If you want to override this in a child theme, then include a file
