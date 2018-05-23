@@ -3,6 +3,15 @@ img {
   height: auto;
 }
 
+article p img {
+  float: right;
+}
+
+.not-front .field-image img {
+  width: 100%;
+  height: auto;
+}
+
 .not-front article img {
   width: inherit;
   height: inherit;
@@ -27,6 +36,29 @@ img {
   line-height: 50px;
   text-align: center;
   font-size: 1.8em;
+}
+
+/* Sidebar */
+
+.related-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 60px;
+}
+
+.related-sidebar ul > li {
+  margin-bottom: 5px;
+}
+
+.related-sidebar ul a {
+  color: #38312b;
+  text-transform: uppercase;
+}
+
+.related-sidebar i {
+  font-family: Fontawesome;
+  font-style: normal;
+  margin-right: 10px;
 }
 
 /* Forms */
