@@ -7,6 +7,10 @@ article p img {
   float: right;
 }
 
+.no-sidebar article p img {
+  float: left;
+}
+
 .not-front .field-image img {
   width: 100%;
   height: auto;
@@ -63,9 +67,22 @@ article p img {
 
 /* Forms */
 
+.no-sidebar form {
+  max-width: 540px;
+  width: 100%;
+}
+
+.form-field {
+  margin-bottom: 30px;
+}
+
+form br {
+  display: none;
+}
+
 label {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 0;
 }
 
 input:not([type="submit"]), textarea {
@@ -77,6 +94,11 @@ input:not([type="submit"]), textarea {
 
 input:not([type="submit"]) {
   height: 40px;
+}
+
+input[type="checkbox"] {
+  height: auto;
+  width: auto;
 }
 
 /* SERVICES */

@@ -1,6 +1,11 @@
 <?php get_header(); ?>
 
-<?php $image = get_field('foto'); ?>
+<?php
+	// cache custom fields
+	$image = get_field('foto');
+	$email = get_field('e-mail');
+	$phone = get_field('telefoon');
+?>
 
 	<div id="main-content" class="container not-front content-area">
 		<main id="content" class="site-main" role="main">
@@ -16,6 +21,21 @@
 				<div class="field-content col-md-9">
 					<h2><?php the_title(); ?></h2>
 					<?php the_content(); ?>
+
+					<?php if (!empty($email) || !empty($phone)) : ?>
+						<div class="team__contact">
+						<?php
+							if (!empty($email)) {
+								echo "<div class='email'><strong>E-mail:</strong> <a href='mailto:". $email. "' title='Stuur e-mail'>" .$email. "</a></div>";
+							}
+							if (!empty($phone)) {
+								echo "<div class='phone'><strong>Telefoon:</strong> " .$phone. "</div>";
+							}
+						?>
+						</div>
+				 	<?php endif; ?>
+
+					<a href="over-ons/onze-mensen" class="btn btn-lg btn-cta">Terug</a>
 					<?php endwhile; ?>
 				</div>
 

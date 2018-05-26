@@ -2,10 +2,10 @@
 
 <?php get_header(); ?>
 <?php $image = get_field("hoofdafbeelding"); ?>
-<div id="main-content" class="container not-front team-page">
+<div id="main-content" class="container not-front no-sidebar">
   <main id="content" role="main">
     <div class="row">
-      <div class="col-xs-12">
+      <article class="col-xs-12">
         <h2><?php the_title(); ?></h2>
 
         <?php if (have_posts()) : while(have_posts()) : the_post(); ?>
@@ -18,7 +18,7 @@
           <?php endif; ?>
         <?php endwhile; endif; ?>
 
-      </div>
+      </article>
 
     </div>
   </main><!-- #content -->
