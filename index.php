@@ -37,7 +37,7 @@
 
         <ul>
         <?php while ($query->have_posts() ) : $query->the_post(); ?>
-          <?php if ($post->ID !== $current_id && $post->post_title !== $category->name) { ?>
+          <?php if ($post->ID !== $current_id && $post->post_title !== $category->name && $post->ID !== 50) { ?>
             <li>
               <i class="fas fa-arrow-circle-right"></i><a href="<?php echo get_permalink( $post->ID ); ?>" title="Bekijk <?php the_title(); ?>"><?php the_title(); ?></a>
             </li>
@@ -53,7 +53,7 @@
         <h2>Testimonials</h2>
         <ul>
         <?php while ($query->have_posts() ) : $query->the_post(); ?>
-          <?php if ($post->ID !== $current_id && $post->post_title !== $category->name) : ?>
+          <?php if ($post->ID !== $current_id  && $post->post_title !== $category->name) : ?>
             <li>
               <i class="fas fa-arrow-circle-right"></i><a href="<?php echo get_permalink( $post->ID ); ?>" title="Bekijk <?php the_title(); ?>"><?php the_title(); ?></a>
             </li>

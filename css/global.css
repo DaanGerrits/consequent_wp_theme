@@ -21,6 +21,13 @@ article p img {
   height: inherit;
 }
 
+@media screen and (max-width: 580px) {
+  .not-front article p img {
+    float: left;
+    width: 100%;
+  }
+}
+
 .not-front main {
   padding-bottom: 30px;
   border-bottom: 1px solid #D8D6D1;
@@ -63,6 +70,12 @@ article p img {
   font-family: Fontawesome;
   font-style: normal;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 991px) {
+  aside.sidebar {
+    margin-top: 60px;
+  }
 }
 
 /* Forms */
@@ -136,6 +149,11 @@ input[type="checkbox"] {
   text-decoration: none;
 }
 
+/* .services--box .btn-default {
+  position: absolute;
+  bottom: 60px;
+} */
+
 .btn-default {
   background-color: #ff6600;
   border-color: #ff6600;
@@ -143,6 +161,18 @@ input[type="checkbox"] {
   border-radius: 0;
   font-size: 16px;
   margin-top: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  #services {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .services--box {
+    min-height: auto;
+  }
 }
 
 /* MAIN */

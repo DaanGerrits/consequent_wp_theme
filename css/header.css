@@ -118,3 +118,27 @@ a:hover, a:focus {
   display: block;
   float: left;
 }
+
+@media screen and (max-width: 991px) {
+  #hero {
+    padding: 0;
+  }
+
+  .vacatures {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .vacatures {
+    text-align: center;
+  }
+
+  .cta-title {
+    margin: 30px 0;
+  }
+
+  .vacatures .btn-cta {
+    margin-bottom: 30px;
+  }
+}

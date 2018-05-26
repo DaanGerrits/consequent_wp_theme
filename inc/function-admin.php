@@ -6,7 +6,7 @@
   =================
 */
 
-function consequent_add_admin_page() {
+/* function consequent_add_admin_page() {
 
   add_menu_page(
     'Consequent Theme Options',
@@ -24,7 +24,7 @@ add_action('admin_menu', 'consequent_add_admin_page');
 function consequent_theme_create_page() {
   // generate admin page
   echo '<h1>Consequent Theme Options</h1>';
-}
+} */
 
 function consequent_custom_logo_setup() {
     $defaults = array(
@@ -94,8 +94,7 @@ function consequent_load_scripts() {
   wp_enqueue_style('global', get_template_directory_uri() . '/css/global.css', false, '1.0.0', 'all');
   wp_enqueue_style('pages_css', get_template_directory_uri() . '/css/pages.css', false, '1.0.0', 'all');
 
-  //wp_dequeue_script( 'jquery' );
-  //wp_register_script('jquery.bootstrap.min', get_template_directory_uri() . '/js/bootstrap.min.js', 'jquery');
+  // js scripts
   wp_enqueue_script('jquery', get_template_directory_uri() . '/js/libs/jquery.v3.3.1.min.js');
   wp_enqueue_script('owl-carousel', get_template_directory_uri() . '/js/libs/owl.carousel.min.js', array(), '1.0.0', true);
   wp_enqueue_script('custom', get_template_directory_uri() . '/js/custom.js', array(), '1.0.0', true);
