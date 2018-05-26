@@ -3,6 +3,19 @@ img {
   height: auto;
 }
 
+article p img {
+  float: right;
+}
+
+.no-sidebar article p img {
+  float: left;
+}
+
+.not-front .field-image img {
+  width: 100%;
+  height: auto;
+}
+
 .not-front article img {
   width: inherit;
   height: inherit;
@@ -29,11 +42,47 @@ img {
   font-size: 1.8em;
 }
 
+/* Sidebar */
+
+.related-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 60px;
+}
+
+.related-sidebar ul > li {
+  margin-bottom: 5px;
+}
+
+.related-sidebar ul a {
+  color: #38312b;
+  text-transform: uppercase;
+}
+
+.related-sidebar i {
+  font-family: Fontawesome;
+  font-style: normal;
+  margin-right: 10px;
+}
+
 /* Forms */
+
+.no-sidebar form {
+  max-width: 540px;
+  width: 100%;
+}
+
+.form-field {
+  margin-bottom: 30px;
+}
+
+form br {
+  display: none;
+}
 
 label {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 0;
 }
 
 input:not([type="submit"]), textarea {
@@ -45,6 +94,11 @@ input:not([type="submit"]), textarea {
 
 input:not([type="submit"]) {
   height: 40px;
+}
+
+input[type="checkbox"] {
+  height: auto;
+  width: auto;
 }
 
 /* SERVICES */

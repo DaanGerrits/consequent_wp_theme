@@ -35,17 +35,19 @@
   <div class="row">
     <main class="col-md-7">
       <article id="about">
-        <h2>Welkom bij Hondenschool Consequent</h2>
-        <p>Een goede relatie tussen hond en baas begint met wederzijds respect en begrip. Een hondentraining is dan ook veel meer dan uw hond leren zitten of liggen.</p>
-        <p>Ons doel is dat u en uw hond elkaar beter leren begrijpen. Dat doen we door u te leren hoe u uw hond op een goede manier begeleidt en opvoedt.</p>
-        <p>Iedere hond is welkom bij Hondenschool Consequent. Puppy of volwassen, rashond of rasechte bastaard, onbezorgde hond of hond met een verleden...
-          Voor ieder type hond bieden wij een passende cursus of begeleiding.</p>
-        <p>Naast de cursussen die in groepsverband worden aangeboden, bieden wij ook privétraining, begeleiding aan huis en gedragstherapie.</p>
-        <p>Snuffel gerust even rond op de site!</p>
-        <p>Met vriendelijke groeten,</p>
-        <p>Jolyn Holtvluwer, eigenaresse van Hondenschool Consequent</p>
+        <?php $query = new WP_Query( array( 'post_type' => 'page', 'p' => '230' ) ); ?>
+        <?php $image = get_field('hoofdafbeelding', 230);?>
 
-        <img src="/consequent/wp-content/themes/consequent_theme/img/jolyn-holtvluwer-hondenschool-consequent.jpg" alt="Jolyn Holtvluwer van Hondenschool Consequent">
+        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+          <h2><?php the_title(); ?></h2>
+          <?php the_content(); ?>
+
+          <?php if (!empty($image)) : ?>
+          <div class="field-image">
+            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>" />
+          </div>
+          <?php endif; ?>
+        <?php endwhile; ?>
       </article>
 
       <section id="testimonials">

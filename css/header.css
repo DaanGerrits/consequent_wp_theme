@@ -55,6 +55,10 @@ a:hover, a:focus {
   background-color: #ff6600;
 }
 
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+  background-color: #777;
+}
+
 /* Bootstrap dropdown on hover fix */
 @media (min-width: 979px) {
   ul.nav li.dropdown:hover > ul.dropdown-menu {
@@ -65,10 +69,11 @@ a:hover, a:focus {
     background-color: #ff6600;
     padding: 15px;
     left: 0;
-    margin-top: 3px;
+    /* margin-top: 3px; */
     right: auto;
     border-radius: 0;
     border: 0;
+    border-top: 1px solid white;
   }
   .dropdown-menu > li > a {
     color: white;
