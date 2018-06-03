@@ -145,7 +145,7 @@ input[type="checkbox"] {
   color: inherit;
 }
 .services--box h2 a:hover, .services--box h2 a:focus {
-  color: #ff6600;
+  color: #fd6300;
   text-decoration: none;
 }
 
@@ -155,8 +155,8 @@ input[type="checkbox"] {
 } */
 
 .btn-default {
-  background-color: #ff6600;
-  border-color: #ff6600;
+  background-color: #fd6300;
+  border-color: #fd6300;
   color: #fff;
   border-radius: 0;
   font-size: 16px;

@@ -52,7 +52,7 @@ a:hover, a:focus {
 
 .nav > li > a:focus, .nav > li > a:hover, .nav > li.active > a {
   color: #fff;
-  background-color: #ff6600;
+  background-color: #fd6300;
 }
 
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
@@ -66,7 +66,7 @@ a:hover, a:focus {
   }
 
   .navbar-nav > li > .dropdown-menu {
-    background-color: #ff6600;
+    background-color: #fd6300;
     padding: 15px;
     left: 0;
     /* margin-top: 3px; */
@@ -104,8 +104,8 @@ a:hover, a:focus {
 }
 
 .btn-cta {
-  background-color: #ff6600;
-  button-color: #ff6600;
+  background-color: #fd6300;
+  border-color: #fd6300;
   color: white;
   border-radius: 0;
 }
